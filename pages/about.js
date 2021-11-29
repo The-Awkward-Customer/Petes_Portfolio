@@ -15,7 +15,7 @@ export default function about() {
   
         <main className={styles.main}>
           <h1 className={styles.title}>
-            Welcome Peter H Abbott to <a href="/index">Next.js!</a>
+            Welcome Peter H Abbott to <link href="/index" ><a>about</a></link>
           </h1>
           </main>
         </div>
