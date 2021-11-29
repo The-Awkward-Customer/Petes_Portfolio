@@ -1,6 +1,9 @@
+import Navbar from "../../Components/Navbar";
+
 const Page = () => {
     return (
     <div>
+        <Navbar/>
         <h1>test page</h1>
         <p>Hello there… this is a test page</p>
         <p>lorem ipsum</p>
