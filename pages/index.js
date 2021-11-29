@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from 'next.link'
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome Peter H Abbott to <Link href="/about">Next.js!</Link>
+          Welcome Peter H Abbott to <a href="/about">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
