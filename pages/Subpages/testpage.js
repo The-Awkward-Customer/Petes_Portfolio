@@ -1,7 +1,7 @@
 const Testpage = () => {
     return (
     <div>
-        <h1>Sub-Page</h1>
+        <h1>test page</h1>
         <p>Hello there… this is the about page</p>
         <p>lorem ipsum</p>
         </div>
