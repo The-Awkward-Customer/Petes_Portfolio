@@ -2,9 +2,9 @@
 
 const Footer = () => {
     return (
-        <div>
+        <footer>
             <p>Love you &#128512; </p>
-        </div>
+        </footer>
       );
 }
  
