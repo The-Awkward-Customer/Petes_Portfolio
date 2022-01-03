@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import TextBlock from "../Components/TextBlock";
-import { COLORS } from "../constants";
-import { SPACING } from "../constants";
-import { SIZES } from "../constants";
-import { device } from "../constants";
+import TextBlock from "../../Components/TextBlock";
+import { COLORS, SPACING, SIZES, device } from "../../constants";
 
 const PageWrapper = styled.div`
   margin: auto;

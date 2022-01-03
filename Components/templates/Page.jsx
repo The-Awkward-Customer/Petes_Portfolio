@@ -1,10 +1,9 @@
+import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { SPACING } from "../constants";
-import { device } from "../constants";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
-const SiteWrapper = styled.div`
+const PageWrapper = styled.div`
   margin: auto;
   padding: ${SPACING.l};
 
@@ -33,14 +32,16 @@ const SiteWrapper = styled.div`
   }
 `;
 
-const Layout = ({ children }) => {
+export const Page = (props) => {
   return (
-    <SiteWrapper className="">
+    <PageWrapper>
       <Navbar />
       {children}
       <Footer />
-    </SiteWrapper>
+    </PageWrapper>
   );
 };
 
-export default Layout;
+Page.defaultProps = {
+  selected: false,
+};
