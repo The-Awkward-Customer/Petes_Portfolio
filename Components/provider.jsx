@@ -1,9 +1,9 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
-import { theme } from "../theme";
+// import React from "react";
+// import { ThemeProvider } from "styled-components";
+// import { theme } from "../theme";
 
-export function Provider({ children }) {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
-}
+// export function Provider({ children }) {
+//   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+// }
 
-export default Provider;
+// export default Provider;

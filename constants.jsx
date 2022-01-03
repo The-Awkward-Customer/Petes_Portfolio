@@ -8,8 +8,16 @@ export const COLORS = {
   primary_40: "#C5C5C5",
   primary_20: "#F0F0F0",
   primary_background: "##FFFFFF",
-  primary_Inverse: "#262626",
+  primary_Inverse: "#262626"
 };
+
+// const baseUnit = 0.4;
+
+// export const getSpacing = (multiplier) => {
+//   return `${base * multiplier}rem`
+// }
+
+// marginTop: getSpacing(4)
 
 // For margins & padding
 export const SPACING = {
@@ -21,9 +29,8 @@ export const SPACING = {
   xl: "48px",
   xxl: "64px",
   widthFill: "10vw",
-  heightFill: "100vh",
+  heightFill: "100vh"
 };
-
 // For text sizes
 export const SIZES = {
   //Primary sizes
@@ -33,7 +40,7 @@ export const SIZES = {
   m: "32px",
   l: "48px",
   xl: "10vw",
-  xxl: "20vw",
+  xxl: "20vw"
 };
 
 // Breakpoints based on Chrome Dev Tools
@@ -44,7 +51,7 @@ export const BREAKPOINTS = {
   tablet: "768px",
   laptop: "1024px",
   laptopL: "1440px",
-  Desktop: "2560px",
+  Desktop: "2560px"
 };
 
 // Media Query values
@@ -56,5 +63,23 @@ export const device = {
   laptop: `(min-width: ${BREAKPOINTS.laptop})`,
   laptopL: `(min-width: ${BREAKPOINTS.laptopL})`,
   desktop: `(min-width: ${BREAKPOINTS.desktop})`,
-  desktopL: `(min-width: ${BREAKPOINTS.desktop})`,
+  desktopL: `(min-width: ${BREAKPOINTS.desktop})`
+};
+
+export const buttons = {
+  primary: {
+    background: "#FA00FF",
+    borderWidth: "1px solid",
+    border: COLORS.primary_100,
+    hoverBg: "#C5C5C5",
+    focusShadow: "0 0 0 2px white, 0 0 0 8px black"
+  },
+
+  secondary: {
+    background: "#7B61FF",
+    borderWidth: "1px solid",
+    border: "#616161",
+    hoverBg: "#C5C5C5",
+    focusShadow: "0 0 0 2px white, 0 0 0 8px black"
+  }
 };

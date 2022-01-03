@@ -5,23 +5,23 @@ import ContentGrid from "../Components/ContentGrid";
 import { device } from "../constants";
 import CounterHooks from "../Components/CounterHooks";
 import Toggler from "../Components/Toggler";
-import Provider from "../Components/provider";
+
+import { Cta } from "../Components/Atoms/Cta";
 
 const PageWrapper = styled.div`
   margin: auto;
-  padding: ${(props) => props.theme.space[0]};
+  /* padding: ${(props) => props.theme.space[0]}; */
 `;
 
 export default function Home() {
   return (
-    <Provider>
-      <PageWrapper>
-        <HeaderBlock />
-        <ContentGrid />
-        <CounterHooks />
-        <Toggler />
-      </PageWrapper>
-    </Provider>
-    // <div>hello</div>
+    <PageWrapper>
+      <HeaderBlock />
+      <Cta variation="primary" text="primary" />
+      <Cta variation="secondary" text="secondary" />
+      <ContentGrid />
+      <CounterHooks />
+      <Toggler />
+    </PageWrapper>
   );
 }
