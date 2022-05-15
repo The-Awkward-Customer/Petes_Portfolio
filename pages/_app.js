@@ -1,6 +1,6 @@
 import "../index.css";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, children }) {
   return <Component {...pageProps} />;
 }
 

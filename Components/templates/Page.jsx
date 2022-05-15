@@ -1,43 +1,24 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import styled from "styled-components/macro";
+import styled from "styled-components";
+import { Footer } from "../micro/Footer";
+import { Nav } from "../micro/Nav";
 
 const PageWrapper = styled.div`
-  margin: auto;
-  padding: ${SPACING.l};
+  background-color: lightpink;
 
-  @media ${device.mobileS} {
-    width: 100vw;
+  @media (min-width: 320px) {
+    margin: 16px;
   }
 
-  @media ${device.mobileM} {
-    width: 100vw;
-  }
-
-  @media ${device.mobileL} {
-    width: 100vw;
-  }
-
-  @media ${device.tablet} {
-    width: 90vw;
-  }
-
-  @media ${device.laptopM} {
-    width: 90vw;
-  }
-
-  @media ${device.laptopL} {
-    width: 90vw;
+  @media (min-width: 768px) {
+    margin: 64px;
   }
 `;
 
 export const Page = (props) => {
   return (
     <PageWrapper>
-      <Navbar />
-      {children}
-      <Footer />
+      <Nav />
+      {props.children}
     </PageWrapper>
   );
 };
