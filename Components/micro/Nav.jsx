@@ -38,11 +38,11 @@ const PlaceholderShape = styled.div`
 `;
 
 const Label = styled.h1`
-  font-family: ${typog.fonts.Headers};
+  font-family: ${typog.fonts.manrope};
   font-size: 16px;
   line-height: 160%;
   font-weight: 400;
-  color: ${colors.color.hue_100};
+  color: ${colors.grey.grey_100};
 `;
 
 export const Nav = () => {

@@ -7,12 +7,12 @@ const Container = styled.button`
   align-items: center;
   gap: 4px;
   padding: 8px 8px 8px 8px;
-  background-color: #f7f7f7;
+  background-color: ${colors.grey.grey_20};
   border: none;
   border-radius: 4px;
 
   &:hover {
-    background-color: #e0e0e0;
+    background-color: ${colors.grey.grey_40};
   }
 
   &:focus {
@@ -21,11 +21,11 @@ const Container = styled.button`
 `;
 
 const Label = styled.p`
-  font-family: ${typog.fonts.Headers};
+  font-family: ${typog.fonts.manrope};
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: ${colors.color.hue_100};
+  color: ${colors.grey.grey_80};
 `;
 
 const Icon = styled.div`

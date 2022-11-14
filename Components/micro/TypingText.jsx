@@ -5,10 +5,10 @@ import { colors, typog } from "../../theme";
 const Display = styled.h1`
   display: flex;
   padding: 64px 0px 0px 0px;
-  font-family: ${typog.fonts.Headers};
+  font-family: ${typog.fonts.manrope};
   font-weight: 400;
   line-height: 160%;
-  color: ${colors.color.hue_100};
+  color: ${colors.grey.grey_100};
   text-align: left;
 
   @media (min-width: 320px) {

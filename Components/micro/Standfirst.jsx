@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, typog } from "../../theme";
+import { colors, link, typog } from "../../theme";
 
 const Container = styled.div`
   display: flex;
@@ -10,24 +10,26 @@ const Container = styled.div`
 `;
 
 const Text = styled.p`
-  font-family: ${typog.fonts.Headers};
+  font-family: ${typog.fonts.manrope};
   font-size: 16px;
 `;
 
 const Link = styled.a`
-  font-family: ${typog.fonts.Headers};
-  font-size: 16px;
-  font-weight: 800;
-  color: ${colors.color.hue_100};
-  text-decoration: none;
+  font-family: ${link.default.font};
+  font-size: ${link.default.size};
+  font-weight: ${link.default.weight};
+  color: ${link.default.color};
+  text-decoration: ${link.default.decoration};
 
   &:hover {
-    color: grey;
+    outline: none;
+    color: ${link.hover.color};
+    text-decoration: ${link.hover.decoration};
   }
 
   &:focus {
     outline: none;
-    text-decoration: underline 2px;
+    text-decoration: ${link.focused.decoration};
   }
 `;
 
@@ -35,7 +37,7 @@ export const Standfirst = () => {
   return (
     <Container>
       <Text>
-        Currently maturing design at{" "}
+        Currently leading design at{" "}
         <Link href="https://www.fresha.com">Fresha</Link>
       </Text>
     </Container>
